@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+}
+.container {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+.upper-section {
+    background-image: url('../todo-app-main/images/bg-desktop-light.jpg');
+    height: 35vh;
+    width: 100%;
+    background-size: cover;
+}
+.upper-section span {
+    font-weight:700;
+    font-size:33px;
+}
+.upper-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top:12%;
+    position: absolute;
+    width: 400px;
+    color: #fff;
+}
+.new-task {
+    box-sizing: border-box;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top:20%;
+    position: absolute;
+    width: 450px;
+    background-color: hsl(0, 0%, 98%);
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0px 0px 10px 0.5px rgba(0,0,0,1);
+}
+.new-task input {
+    background-color: hsl(0, 0%, 98%);
+    border: none;
+    margin-left: 15px;
+    outline: none;
+}
+.task .unticked {
+    color: hsl(0, 0%, 55%);
+    margin-top: 2px;
+    cursor: pointer;
+}
+.fa-circle-check {
+    font-size: 18px;
+    font-weight: 700;
+}
+.task .unticked:hover, .fa-circle-check{
+    font-weight: 300;
+    background: linear-gradient(to right,hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text; 
+}
+.lower-section {
+    height: 65%;
+}
+.fa-moon {
+    font-size: 35px;
+}
+.all-tasks-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top:30%;
+    position: absolute;
+    width: 450px;
+    box-shadow: 0px 0px 10px 0.5px rgba(0,0,0,1);
+    border-radius: 5px;
+}
+.allTasks .task {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+    background-color: hsl(0, 0%, 98%);
+}
+.allTasks .task span 
+{
+    margin-left: 20px;
+}
+.allTasks .completed-task {
+    text-decoration: line-through;
+}
+.todo-footer {
+display: flex;
+justify-content: space-around;;
+padding: 5px;
+}
+.todo-footer span {
+    font-size: 16px;
+    cursor: pointer;
+}
+.filters span:hover, .clear-completed span:hover {
+    color: blue;
+    font-weight: 500;
+}
+.todo-footer .filters span{
+    padding: 0px 0px 0px 10px ;
+}
+.selected {
+    color: blue;
+    font-weight: 700;
+}
